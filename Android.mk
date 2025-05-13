@@ -1,10 +1,12 @@
-# Replace $$DEVICE$$ with your Device Name's Value. Mine is Primo_RX5.
-# Replace $$BRAND$$ with your Brand's / Manufacturer's Value, Mine is WALTON 
+#
+# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-ifneq ($(filter a02,$(TARGET_DEVICE)),)
+LOCAL_PATH := $(call my-dir)
 
-LOCAL_PATH := device/samsung/a02
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
+ifeq ($(TARGET_DEVICE),a02)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
