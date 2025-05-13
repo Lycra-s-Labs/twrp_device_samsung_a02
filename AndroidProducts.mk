@@ -4,4 +4,4 @@
 
 LOCAL_PATH := device/samsung/a02
 
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_a02.mk
+PRODUCT_MAKEFILES := $(LOCAL_PATH)/twrp_a02.mk
