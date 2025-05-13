@@ -9,14 +9,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 # If you are building from OmniROM's minimal source, Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Replace $$DEVICE$$ with your Device Name's Value.
-# Replace $$BRAND$$ with your Brand's / Manufacturer's Value.
-PRODUCT_COPY_FILES += device/samsung/a02/prebuilt/zImage:kernel
+
 # Fles under $(LOCAL_PATH)/recovery/root/ gets automatically copied into recovery
 # PRODUCT_COPY_FILES += $(LOCAL_PATH)/recovery/root/*:root/*
 
 PRODUCT_DEVICE := a02
-PRODUCT_NAME := omni_a02
+PRODUCT_NAME := twrp_a02
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A022F
 PRODUCT_MANUFACTURER := samsung
