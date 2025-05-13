@@ -30,5 +30,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Add fingerprint from Stock ROM build.prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
     # These lines are from my device. You MUST Replace yours.
-    BUILD_FINGERPRINT="samsung/a02xx/a02:11/RP1A.200720.012/A022FXXS3BWH1:user/release-keys" \
-    PRIVATE_BUILD_DESC="a02xx-user 11 RP1A.200720.012 A022FXXS3BWH1 release-keys"
+    BUILD_FINGERPRINT="samsung/a02xx/a02:11/RP1A.200720.012/A022FXXS3BWH1:user/release-keys"
+
+PRIVATE_BUILD_DESC="a02xx-user 11 RP1A.200720.012 A022FXXS3BWH1 release-keys"
